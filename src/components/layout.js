@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import Loader from '../components/Loader'
+import Nav from './nav';
 import { GlobalStyle, theme } from '../styles';
 
 const StyledContent = styled.div`
@@ -59,7 +60,7 @@ const Layout = ({ children, location }) => {
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
-            {/* <Nav isHome={isHome} />  */}
+            <Nav isHome={isHome} /> 
               {/* <Social isHome={isHome} /> */}
               {/* <Email isHome={isHome} /> */}
               <div id="content">{children}</div>
