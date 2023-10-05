@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Hero from '../components/sections/Hero';
 import Layout from '../components/layout';
+import About from '../components/sections/about';
 
 
 const StyledMainContainer = styled.main`
@@ -13,7 +14,7 @@ const IndexPage = ({ location }) => (
   <Layout location={location}>
     <StyledMainContainer className="fillHeight">
       <Hero />
-     
+     <About/>
     </StyledMainContainer>
   </Layout>
 );
