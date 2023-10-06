@@ -66,7 +66,7 @@ const Layout = ({ children, location }) => {
               <Social isHome={isHome} />
               {/* <Email isHome={isHome} /> */}
               <div id="content">{children}</div>
-              {/* <Footer /> */}
+               <Footer /> 
             </StyledContent>
           )}
         </ThemeProvider>
